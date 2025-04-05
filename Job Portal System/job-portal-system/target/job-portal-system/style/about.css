@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a.active,
+nav a:hover {
+    color: #ffd700;
+  }
+
+nav a.join-link {
+    background-color: white;
+    color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+nav a.join-link:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 20px; /* Reduced horizontal padding */
+    background-color: #eaf4ff;
+    animation: fadeIn 1s ease-in;
+    flex-wrap: wrap; /* for better responsiveness */
+}
+
+.about-text {
+    max-width: 600px;
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.features {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    flex: 1;
+    min-width: 200px;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+    min-width: 300px;
+    margin-top: 20px;
+}
+
+.about-image img {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature-card {
+        width: 100%;
+        max-width: 400px;
+    }
+}

@@ -1,0 +1,63 @@
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee 
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+  <display-name>Archetype Created Web Application</display-name>
+  <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+  <servlet>
+        <servlet-name>HomeServlet</servlet-name>
+        <servlet-class>servlets.HomeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HomeServlet</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AboutServlet</servlet-name>
+        <servlet-class>servlets.AboutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AboutServlet</servlet-name>
+        <url-pattern>/about</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>JobsServlet</servlet-name>
+        <servlet-class>servlets.JobsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>JobsServlet</servlet-name>
+        <url-pattern>/jobs</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>BlogServlet</servlet-name>
+        <servlet-class>servlets.BlogServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BlogServlet</servlet-name>
+        <url-pattern>/blog</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ContactServlet</servlet-name>
+        <servlet-class>servlets.ContactServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ContactServlet</servlet-name>
+        <url-pattern>/contact</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>JoinServlet</servlet-name>
+        <servlet-class>servlets.JoinServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>JoinServlet</servlet-name>
+        <url-pattern>/join</url-pattern>
+    </servlet-mapping>
+</web-app>
