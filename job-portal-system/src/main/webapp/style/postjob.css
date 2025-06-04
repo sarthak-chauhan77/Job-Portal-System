@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+}
+
+header {
+  background: linear-gradient(to right, #2C3E50, #2980B9);
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+header nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.form-container {
+  width: 50%;
+  margin: 50px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.form-container h2 {
+  text-align: center;
+  color: #0a41a1;
+  margin-bottom: 20px;
+}
+
+.form-container form label {
+  display: block;
+  margin: 15px 0 5px;
+  color: #333;
+}
+
+.form-container form input,
+.form-container form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+.form-container form button {
+  background-color: #0a41a1;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.form-container form button:hover {
+  background-color: #5e1094;
+}
+
+footer {
+  margin-top: 80px;
+  background: #111827;
+  color: white;
+  padding: 40px 20px 10px;
+  margin-top: 0px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-links,
+.footer-contact {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 10px;
+  border-top: 1px solid #444;
+}

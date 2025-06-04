@@ -1,0 +1,335 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #2C3E50, #2980B9);
+    color: white;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffd700;
+}
+
+/* Join Now Button */
+.join-btn {
+    background-color: white;
+    color: #0a41a1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.join-btn:hover {
+    background-color: #281b34;
+    color: white;
+}
+
+/* Mobile Menu */
+.menu-toggle {
+    font-size: 1.8rem;
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: linear-gradient(to right, #2C3E50, #2980B9);
+        padding: 20px;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .join-btn {
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-active nav {
+        display: flex;
+    }
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background-image: url('https://thumbs.dreamstime.com/b/man-analysis-business-accounting-laptop-45719380.jpg?w=768');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 100px 20px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.hero-text span {
+    color: #ffc107;
+}
+
+
+/* Categories */
+.categories {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.category-card {
+    background-color: white;
+    margin: 10px auto;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Job Section */
+.job-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.job-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.subheading {
+    color: #0a41a1;
+    margin-top: 5px;
+    font-size: 1rem;
+}
+
+/* Job Categories */
+.job-categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.job-categories a {
+    text-decoration: none;
+    color: #777;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+.job-categories a.active {
+    color: #2980B9;
+    border-bottom: 2px solid #007bff;
+}
+
+/* Job Listings */
+.job-listings {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.job-card {
+    background: #fff;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-8px) scale(1.02);
+}
+
+.apply-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: #0a41a1;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.apply-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.job-badge {
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.art { background: #ff7053; color: white; }
+.finance { background: #007bff; color: white; }
+.medical { background: #28a745; color: white; }
+
+.job-card h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.job-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+.company {
+    font-weight: bold;
+}
+
+.job-time {
+    font-size: 0.8rem;
+    color: #aaa;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
+
+/* Footer */
+footer {
+    background: #111827;
+    color: white;
+    padding: 40px 20px 10px;
+    margin-top: 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-container h3,
+.footer-container h4 {
+    color: #ffd700;
+    margin-bottom: 15px;
+}
+
+.footer-left,
+.footer-links,
+.footer-contact {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #ffd700;
+}

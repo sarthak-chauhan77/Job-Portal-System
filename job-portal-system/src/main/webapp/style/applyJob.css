@@ -1,0 +1,215 @@
+/* Apply Job Page CSS */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: linear-gradient(to right, #2C3E50, #2980B9);
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+header nav a:hover, 
+header nav a.active {
+    text-decoration: underline;
+}
+
+.apply-job-container {
+    max-width: 700px;
+    background: white;
+    margin: 40px auto;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(127, 24, 197, 0.32);
+}
+
+.apply-job-container h2 {
+    color: #7f18c5;
+    margin-bottom: 15px;
+    font-size: 28px;
+    border-bottom: 2px solid #7f18c5;
+    padding-bottom: 8px;
+}
+
+.job-info p {
+    font-size: 16px;
+    margin: 8px 0;
+    line-height: 1.4;
+}
+
+form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 600;
+    margin: 12px 0 6px;
+    font-size: 15px;
+    color: #4a4a4a;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1.5px solid #ccc;
+    font-size: 14px;
+    transition: border 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="file"]:focus {
+    border-color: #7f18c5;
+    outline: none;
+}
+
+input[readonly] {
+    background-color: #f0f0f0;
+    color: #7a7a7a;
+    cursor: not-allowed;
+}
+
+button {
+    margin-top: 25px;
+    padding: 12px;
+    background: #0a41a1;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(127, 24, 197, 0.4);
+}
+
+button:hover {
+    background-color: #6213a1;
+}
+
+footer {
+    background: #111827;
+    padding: 30px 40px;
+    margin-top: 0px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.footer-left h3 {
+    color: #7f18c5;
+    margin-bottom: 10px;
+}
+
+.footer-left p {
+    font-weight: 600;
+    color: #555;
+}
+
+.footer-links, .footer-contact {
+    min-width: 150px;
+    margin-top: 10px;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+    margin-bottom: 10px;
+    color: #7f18c5;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.footer-links ul li a:hover {
+    color: #7f18c5;
+}
+
+.footer-contact p {
+    font-weight: 600;
+    color: #555;
+    margin: 6px 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    color: #666;
+    padding-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+    margin-top: 15px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    header {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+    header nav a {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    .apply-job-container {
+        padding: 20px 30px;
+        margin: 20px;
+    }
+    .apply-job-container h2 {
+        font-size: 24px;
+    }
+    footer {
+        padding: 20px 30px;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-links,
+    .footer-contact {
+        margin-top: 20px;
+        min-width: auto;
+        text-align: center;
+    }
+}
+

@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #2C3E50, #2980B9);
+  padding: 20px 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 24px;
+  color: white;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a.active,
+nav a:hover {
+  color: #ffd700;
+}
+
+/* Hero Section */
+.join-hero {
+  background-color: #e9dbff;
+  text-align: center;
+  padding: 60px 20px 30px;
+}
+
+.join-hero h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.join-hero p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Form Section */
+.join-form-section {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 600px; /* Adjusted max-width for better appearance */
+  padding: 20px; /* Added padding for the container */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+}
+
+.join-form {
+  animation: slideUp 1s ease;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group #description {
+  width: 560px;
+  height: 70px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  color: #333;
+  font-weight: 600;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #7f18c5;
+}
+
+button[type="submit"] {
+  background-color: #0a41a1;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #291a36;
+}
+
+/* Link to Login Page */
+.login-link {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.login-link a {
+  color: #7f18c5;
+  text-decoration: none;
+}
+
+/* Error Message */
+.error-message {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background: #111827;
+    color: white;
+    padding: 40px 20px 10px;
+    margin-top: 0px;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .footer-container h3,
+  .footer-container h4 {
+    color: #ffd700;
+    margin-bottom: 15px;
+  }
+
+  .footer-left,
+  .footer-links,
+  .footer-contact {
+    flex: 1;
+    min-width: 250px;
+  }
+
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-links ul li {
+    margin-bottom: 8px;
+  }
+
+  .footer-links ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+  }
+
+  .footer-links ul li a:hover {
+    color: #ffd700;
+  }
+
+/* Animation */
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

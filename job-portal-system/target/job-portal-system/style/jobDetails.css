@@ -1,0 +1,107 @@
+/* General Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+main {
+    flex: 1;
+}
+
+
+header {
+    background: linear-gradient(to right, #2C3E50, #2980B9);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Job Details Container */
+.job-details-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.job-details-container h2 {
+    text-align: center;
+    color: #2C3E50;
+}
+
+.job-details-container p {
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+/* Footer Styles */
+footer {
+    background: #111827;
+    color: white;
+    padding: 40px 20px 10px;
+    margin-top: 0px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-left,
+.footer-links,
+.footer-contact {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #ffd700;
+}
