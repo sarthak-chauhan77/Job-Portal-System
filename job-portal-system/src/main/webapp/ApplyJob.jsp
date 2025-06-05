@@ -96,7 +96,7 @@ try {
             </div>
             <div class="footer-contact">
                 <h4>Contact Us</h4>
-                <p>Email: support@JOBCRUITER.com</p>
+                <p>Email: jobcruiter.service@gmail.com</p>
                 <p>Phone: +91 7217273334</p>
             </div>
         </div>

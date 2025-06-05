@@ -14,8 +14,8 @@ import java.util.Properties;
 @WebServlet("/sendmail")
 public class contact extends HttpServlet {
 
-    private static final String SENDER_EMAIL = "jobrecruiterapp@gmail.com";
-    private static final String APP_PASSWORD = "woabpvgctbxgxgsz"; // Replace this with your real app password
+    private static final String SENDER_EMAIL = "jobcruiter.service@gmail.com";
+    private static final String APP_PASSWORD = "pzadfwnpdqbgthtz"; // Replace this with your real app password
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)

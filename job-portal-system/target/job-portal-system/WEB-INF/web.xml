@@ -7,6 +7,11 @@
   <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
+
+    <context-param>
+        <param-name>supportEmail</param-name>
+        <param-value>jobcruiter.service@gmail.com</param-value>
+    </context-param>
   <servlet>
         <servlet-name>HomeServlet</servlet-name>
         <servlet-class>servlets.HomeServlet</servlet-class>
